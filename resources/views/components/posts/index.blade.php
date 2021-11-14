@@ -13,6 +13,8 @@
             @endif
     </main>
 
+{{--    posts.blade.php--}}
+
     {{--    @foreach($posts as $post)--}}
 {{--        <article>--}}
 {{--            <h1>--}}

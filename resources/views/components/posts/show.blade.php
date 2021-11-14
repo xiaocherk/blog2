@@ -49,8 +49,19 @@
                      {!! $post->body !!}
                     </div>
                 </div>
+
+                <section class="col-span-8 col-start-5 mt-10 space-y-6">
+                    @include('components.posts.add-comment-form')
+
+                        {{--                    <x-post-comment />--}}
+                   @foreach ($post->comments as $comment)
+                    <x-post-comment :comment="$comment"/>
+                    @endforeach
+                </section>
             </article>
         </main>
+
+{{--        post.blade.php--}}
 
 {{--        <footer class="bg-gray-100 border border-black border-opacity-5 rounded-xl text-center py-16 px-10 mt-16">--}}
 {{--            <img src="/images/lary-newsletter-icon.svg" alt="" class="mx-auto -mb-6" style="width: 145px;">--}}
