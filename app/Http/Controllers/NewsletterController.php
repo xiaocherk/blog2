@@ -15,7 +15,7 @@ class NewsletterController extends Controller
     public function __invoke(Newsletter $newsletter)        //request interface
     {
         request()->validate(['email' => 'required|email']);
-            ddd($newsletter);
+
         try{
             $newsletter->subscribe(request('email'));
 

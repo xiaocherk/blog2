@@ -42,8 +42,6 @@ class SessionsController extends Controller
             'email' => 'Your provided credentials could not be verified.'
         ]);
 
-
-
     }
 
     public function destroy()
